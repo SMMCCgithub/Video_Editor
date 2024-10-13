@@ -15,7 +15,7 @@ project ("Video_Editor")
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Add source to this project's executable.
-add_executable (Video_Editor "src/main.cpp" "include/Video_Editor.h" "src/decode_audio.cpp" "src/decode_video.cpp")
+add_executable (Video_Editor "src/C/main.cpp" "include/C_libs/Video_Editor.h" "src/C/decode_audio.cpp" "src/C/decode_video.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Video_Editor PROPERTY CXX_STANDARD 20)
